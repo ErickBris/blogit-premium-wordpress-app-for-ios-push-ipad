@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Getting Started - BlogIt 1.0.9</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Getting Started";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> BlogIt 1.0.9</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../index.html">Welcome</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="index.html">Getting Started</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#getting-started">Getting Started</a></li>
+                
+                    <li><a class="toctree-l4" href="#requirements">Requirements</a></li>
+                
+                    <li><a class="toctree-l4" href="#pre-setup">Pre-Setup</a></li>
+                
+                    <li><a class="toctree-l4" href="#setup">Setup</a></li>
+                
+                    <li><a class="toctree-l4" href="#post-setup">Post-Setup</a></li>
+                
+                    <li><a class="toctree-l4" href="#customization">Customization</a></li>
+                
+                    <li><a class="toctree-l4" href="#push-notifications">Push Notifications</a></li>
+                
+                    <li><a class="toctree-l4" href="#support">Support</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../changelog/index.html">Changelog</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">BlogIt 1.0.9</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Getting Started</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="getting-started">Getting Started</h1>
+<p>This page aims to provide you with a thorough but quick guide to setting up BlogIt for the first time, but it also guides you on how to customize the app and how to setup Push Notifications.</p>
+<hr />
+<h2 id="requirements">Requirements</h2>
+<p>The following requirements must be met in order to use the application template to it's fullest:</p>
+<ul>
+<li>OS X 10.8 (or higher)</li>
+<li>XCode 6.0 (or higher)</li>
+<li>iOS 7.0 (or higher)</li>
+<li>WordPress 3.9 (or higher)</li>
+<li><a href="https://wordpress.org/plugins/json-rest-api">JSON REST API Plugin</a> 1.1.1 (or higher)</li>
+<li><a href="http://guides.cocoapods.org/using/getting-started.html">CocoaPods</a></li>
+</ul>
+<p>You must install the <a href="https://wordpress.org/plugins/json-rest-api">JSON REST API Plugin</a> to your WordPress installation in order to use any of the functionality provided by this application. Don't forget to also activate the plugin! No further WordPress configuration is necessary.</p>
+<p><strong>IMPORTANT:</strong> The project provided uses a popular dependency manager called CocoaPods, which is used a lot throughout the iOS and OS X industry.</p>
+<p>You do <strong>not</strong> have to install CocoaPods by hand, as we have provided an <strong>automated solution</strong>. More about our solution is available in the next section.</p>
+<hr />
+<h2 id="pre-setup">Pre-Setup</h2>
+<p>It's time to get the project rolling, are you excited? We know we are!</p>
+<p>Browse to where you have downloaded BlogIt, then open the <strong>Code</strong> folder.</p>
+<p>Once you've found the folder, look for a file named <strong>Update Pods.command</strong> and double-click it.</p>
+<p><strong>Note</strong>: You will most likely be asked for your password, which is necessary for installing or updating CocoaPods, so type it in and press Enter.</p>
+<p>This will install all the required dependencies, make sure they're up to date and finally create and open the BlogIt XCode workspace.</p>
+<p>Now, here's an <strong>extremely important</strong> bit: when working with CocoaPods projects (such as BlogIt), you <strong>ALWAYS</strong> need to open the file ending with <strong>.xcworkspace</strong>, <em>not .xcproject</em>. This is extremely important, because CocoaPods will automatically configure everything in XCode, and the only way to do so is if you use the .xcworkspace file to work with the project.</p>
+<h2 id="setup">Setup</h2>
+<p>Now that that's out of the way, you're one step away from running the application using your very own blog!</p>
+<p>In XCode, find the file called <em>BITConfig.h</em> and open it up. Read through it (there's not much to read, after all) and make sure to notice that part with <strong>kBIT_BLOG_URL</strong>, as that it the only actual configuration necessary to get the application running.</p>
+<p>Inside the double quotes (" "), prefixed with the at symbol (@), enter your own blog address, so that it reads something like @"http://my-blog.com", and double check that both double quotes and that at symbol are there. Looking good? Good!</p>
+<p>If you wish, you can exclude specific post categories from automatically getting added to the sidebar, by simply adding them to the line that says <strong>kBIT_CATEGORY_EXCLUDE</strong>, and following the instructions provided in the configuration file.</p>
+<p>Similarly, you can exclude specific pages using the <strong>kBIT_PAGE_EXCLUDE</strong> field.</p>
+<p>You are now ready to build the application, and if all goes well, the next thing you will see is a beautiful representation of your very own WordPress blog, congratulations!</p>
+<h2 id="post-setup">Post-Setup</h2>
+<p>There are two <em>targets</em> in the XCode projet for BlogIt, one called <strong>BlogIt</strong> and the other called <strong>BlogIt_No_ads</strong> (or <em>Blogit (No Ads)</em>).
+While the names should be self-explanatory, the first one has built-in support for both iAd and Google AdMob, which can be configured in <em>BITConfig.h</em>, the second one is stripped from all ad-functionality, and should be used in case you don't want to use ads in your app.</p>
+<p><strong>NOTE</strong>: When working with the ad or ad free version of BlogIt, take care to select the correct Storyboard when editing the user interface, as they have separate, but very similar files.</p>
+<p>Additional configuration, including disabling the launch animation and setting up the Map-page, can be found in <em>BITConfig.h</em>.</p>
+<p>That's all that there is to configuration, but be sure to read on if you're interested in customization or Push Notifications.</p>
+<hr />
+<h2 id="customization">Customization</h2>
+<p>One of the more common issues that users face with WordPress blog applications is that the application can only retrieve a certain amount of blog posts.</p>
+<p>This can be remedied by opening up the WordPress admin page, navigating to Settings -&gt; Reading and changing "Blog pages show at most X posts" to a bigger (or smaller) number.</p>
+<p>The optimal value for BlogIt is currently <strong>10</strong>, so make sure you've got it at <strong>10</strong>.</p>
+<p>If you wish to customize any of the user interface elements of BlogIt, be sure to replace the images in the Asset Catalog and by tweaking the Storyboard. Just remember that BlogIt uses Auto Layout and even if you don't think it's worth it, it always pays off to make sure your changes work with Auto Layout.</p>
+<hr />
+<h2 id="push-notifications">Push Notifications</h2>
+<p>First thing you need to do to enable Push Notifications, is to open up <em>BITConfig.h</em> again, look for <strong>kBIT_PARSE_PUSH_ENABLED</strong> and change it from <em>NO</em> to <em>YES</em>.</p>
+<p>This essentially enables Push Notifications on the application's side, as well as loads Parse-specific services.</p>
+<p>Next, install a WordPress plugin called <a href="https://wordpress.org/plugins/simple-parse-push-service/">Simple Parse Push Service</a>.
+Configure it after you've read the next step and setup Push Notifications on both Parse.com and iTunes Connect.</p>
+<p>Now you need to follow <a href="https://parse.com/tutorials/ios-push-notifications">Parse's own tutorial</a> on setting up the rest of the Push Notification service.
+You will also need to fill <strong>kBIT_PARSE_APPLICATION_ID</strong> and <strong>kBIT_PARSE_CLIENT_KEY</strong> from Parse, available under the application Settings -&gt; Keys.</p>
+<p><em>Please note</em> that you should be able to skip step 5 (titled Adding Code for a Push Enabled iOS Application), as when you turned the previous flag from NO to YES, you actually enabled the code in step 5 to be automatically added to your project.</p>
+<p>That should be it, as once you've filled in the keys/id's on both BlogIt and in the WP plugin options, Push Notifications should start working once you publish new posts!</p>
+<p>Feel free to contact us if you have any questions regarding this step!</p>
+<hr />
+<h2 id="support">Support</h2>
+<p>If there's anything troubling you, or you've noticed a bug or an issue, maybe you've even thought of an improvement to the app, do not hesitate to contact us either directly on <a href="http://codecanyon.net/user/Didstopia/portfolio">CodeCanyon</a>, at <a href="http://support.didstopia.com/">http://support.didstopia.com</a> or by emailing us at <a href="mailto:support@didstopia.com">support@didstopia.com</a>.</p>
+<p>We try our best to get back to you within 24 hours of your message.</p>
+<p>Thank you again for being an amazing customer!</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../changelog/index.html" class="btn btn-neutral float-right" title="Changelog"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral" title="Welcome"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright Didstopia 2015</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../index.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../changelog/index.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
